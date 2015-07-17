@@ -1,15 +1,16 @@
 {
   "name": "image uploader",
-  "version": "1.0",
-  "manifest_version": 2,
   "description": "Image Uploader using cnblogs img service",
 
-  "app": {
-    "launch": {
-      "local_path": "index.html"
-    }
+  "background": {
+    "persistent": false,
+    "page": "background.html"
   },
-  
+
+  "browser_action": {
+    "default_icon": "assets/32.png"
+  },
+
   "icons": {
     "16": "assets/32.png",
     "32": "assets/32.png",
@@ -17,8 +18,12 @@
     "128": "assets/128.png",
     "256": "assets/256.png"
   },
-
+  
   "permissions": [
-    "unlimitedStorage", "contextMenus", "tabs"
-  ]
+    "tabs",
+    "*://*.google.com/"
+   ],
+   
+  "version": "1.0",
+  "manifest_version": 2
 }
