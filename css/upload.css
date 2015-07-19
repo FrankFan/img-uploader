@@ -1,0 +1,22 @@
+body {
+    font-size: 12px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 10px;
+    background: none repeat scroll 0 0 #F0F0EE;
+}
+/*#region fine upload*/
+li.alert-success {
+    background-color: #DFF0D8 !important;
+}
+
+li.alert-error {
+    background-color: #F2DEDE !important;
+}
+
+.qq-upload-button{
+    /*width:150px;*/
+}
+#message{
+    margin-top:10px;
+}
