@@ -9,28 +9,6 @@ function setFocus() {
     document.getElementById('input1').focus();
 }
 
-function check_enter(event) {
-    var target = event.target || event.srcElement;
-    if (target.id == "input1") {
-        if (document.getElementById('input1').value == '') {
-            $('#tip_input1').html("请输入登录用户名");
-            return false;
-        } else if (document.getElementById('input2').value == '') {
-            document.getElementById("input2").focus();
-            return false;
-        }
-    }
-    if (target.id == "input2") {
-        if (document.getElementById('input2').value == '') {
-            $('#tip_input2').html("请输入密码");
-            return false;
-        }
-    }
-
-    return true;
-
-}
-
 function checkParams() {
     if (is_in_progress) {
         return false;
@@ -117,9 +95,10 @@ function signin_go() {
 }
 
 $(function() {
-    $('#signin').bind('click', function(e) {
-
-        if(checkParams()) {
+    $('#signin').on('click', function(e) {
+        var result = checkParams();
+        console.log('check result : ' + result);
+        if(result) {
             signin_go();    
         }
         
@@ -127,9 +106,4 @@ $(function() {
 
     // auto focus
     setFocus();
-
-    // input1 注册事件
-    // $('#input1').on('keydown', check_enter);
-    // input2 注册事件
-    // $('#input2').on('keydown', check_enter);
 });
