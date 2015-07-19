@@ -1,4 +1,4 @@
-// var ajaxUrl = '/imageuploader/processupload?host=www.cnblogs.com';
+
 var ajaxUrl = 'http://upload.cnblogs.com/imageuploader/processupload?host=www.cnblogs.com';
 $(function() {
     $('#jquery-wrapped-fine-uploader').fineUploader({
