@@ -21,7 +21,7 @@
   
   "permissions": [
     "tabs",
-    "*://*.google.com/"
+    "*://*.cnblogs.com/"
    ],
    
   "version": "1.0",
