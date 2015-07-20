@@ -1,5 +1,5 @@
-
 var ajaxUrl = 'http://upload.cnblogs.com/imageuploader/processupload?host=www.cnblogs.com';
+
 $(function() {
     $('#jquery-wrapped-fine-uploader').fineUploader({
         validation: {
@@ -29,9 +29,13 @@ $(function() {
         multiple: false
     }).on('complete', function(event, id, fileName, responseJSON) {
         if (responseJSON.success) {
-            $('#message').html(responseJSON.message);
+            if($('#message').html().length != 0) {
+                $('#message').append('\r' + responseJSON.message);
+            }else {
+                $('#message').append(responseJSON.message);
+            }
         } else {
-            $('#message').html(responseJSON.message);
+            $('#message').append('\r' + responseJSON.message);
         }
     });
 });
