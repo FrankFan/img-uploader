@@ -1,6 +1,10 @@
 {
   "name": "image uploader",
   "description": "Image Uploader using cnblogs img service",
+  "version": "1.0",
+  "manifest_version": 2,
+  "author": "Frank Fan",
+  "homepage_url": "https://github.com/FrankFan/img-uploader",
 
   "background": {
     "persistent": false,
@@ -8,7 +12,7 @@
   },
 
   "browser_action": {
-    "default_icon": "assets/32.png"
+    "default_icon": "assets/128.png"
   },
 
   "icons": {
@@ -20,10 +24,6 @@
   },
   
   "permissions": [
-    "tabs",
     "*://*.cnblogs.com/"
-   ],
-   
-  "version": "1.0",
-  "manifest_version": 2
+   ]
 }
