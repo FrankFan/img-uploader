@@ -15,11 +15,65 @@ li.alert-error {
     background-color: #F2DEDE !important;
 }
 
-#message{
-    margin-top:10px;
-    width: 500px;
+.wrap {
+    height: 80px;
 }
 
-.hide {
-    display: none;
+.message {
+    margin-bottom: 15px;
+    margin-left: 30px;
+    width: 60%;
+}
+
+.message i {
+    margin-right: 5px;
+}
+
+div[contenteditable=true] {
+  /*box-shadow: inset 0px 1px 4px #666;*/
+  outline: -webkit-focus-ring-color auto 0;
+}
+
+
+.panel {
+    position: relative;
+    margin: 15px;
+    padding: 39px 19px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.panel:after {
+    content: "Example";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #9da0a4;
+    -webkit-border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    border-radius: 4px 0 4px 0;
+}
+
+.panel.upload-area:after {
+    content: "上传图片";
+}
+
+.panel.show-area:after {
+    content: "上传历史";
+}
+
+.panel.show-area {
+    min-height: 80px;
+}
+
+.copy {
+    margin-left: 15px;
 }
