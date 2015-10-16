@@ -19,8 +19,8 @@ var cnblogsUploader = (function(){
             .done(function(response) {
                 if (response.indexOf('未登录，请先') > -1) {
                     response = response.replace('<link href="/css/base.css" rel="stylesheet">', '');
-                    $('a').attr('href', 'http://passport.cnblogs.com/login.aspx?ReturnUrl=http%3A%2F%2Fwww.cnblogs.com%2F');
                     $('body').html(response);
+                    $('a').attr('href', 'http://passport.cnblogs.com/login.aspx?ReturnUrl=http%3A%2F%2Fwww.cnblogs.com%2F');
                 } else {
                     $('.wrap').show();
                     _uploader();
