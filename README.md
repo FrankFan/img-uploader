@@ -7,8 +7,9 @@
 ## features 
 1. 上传本地图片到服务器，得到图片url
 2. 支持拖拽上传
-3. 记录上传历史的图片的URL
-4. 支持复制
+3. 支持复制
+4. 记录上传历史的图片的URL(todo)
+5. 图片预览功能(todo)
 
 ![](./docs/screenshot.png)
 
@@ -17,3 +18,9 @@
 
 最主要的原因是还是用了Mac，不然可以用之前写的windows的版本，
 详见： [博客园图床ImageBed](https://github.com/FrankFan/CnblogsImageBed)
+
+## intall
+
+`chrome web store` 安装地址（需~翻~墙）：
+
+[https://chrome.google.com/webstore/detail/image-uploader/ncdoclefjnhbjnbcdpekmmgmgbdodklo?hl=zh-CN](https://chrome.google.com/webstore/detail/image-uploader/ncdoclefjnhbjnbcdpekmmgmgbdodklo?hl=zh-CN)
